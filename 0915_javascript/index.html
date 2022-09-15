@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Javascript 객체연습</title>
+
+        <meta charset="utf-8" />
+        <meta name="author" content="KimDaeGak" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+        <link rel="stylesheet" href="style.css"/>
+        <script src="object.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="info_input">
+
+            <div class="info">
+
+                <div class="title">
+                    학년
+                </div>
+
+                <div class="cont">
+                    <input type="text" id="grade">
+                </div>
+
+            </div>
+
+            <div class="info">
+
+                <div class="title">
+                    반
+                </div>
+
+                <div class="cont">
+                    <input type="text" id="sclass">
+                </div>
+
+            </div>
+
+            <div class="info">
+
+                <div class="title">
+                    이름
+                </div>
+
+                <div class="cont">
+                    <input type="text" id="name">
+                </div>
+
+            </div>
+
+            <div class="info">
+
+                <div class="title">
+                    국 어
+                </div>
+
+                <div class="cont">
+                    <input type="text" id="kor">
+                </div>
+
+            </div>
+
+            <div class="info">
+
+                <div class="title">
+                    수 학
+                </div>
+
+                <div class="cont">
+                    <input type="text" id="math">
+                </div>
+
+            </div>
+
+            <div class="info">
+
+                <div class="title">
+                    영 어
+                </div>
+
+                <div class="cont">
+                    <input type="text" id="eng" onkeyup="enterkey()">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="btn">
+            <a href="javascript:stu_save();" id="save_btn">성적등록</a>
+        </div>
+
+        <hr>
+
+        <div id="board">
+            <span>학년</span><span>반</span><span>이름</span><span>국어</span><span>수학</span><span>영어</span><span>총점</span><span>평균</span><span>등수</span>
+        </div>
+
+        <hr>
+
+        <div id="list">
+            
+        </div>
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

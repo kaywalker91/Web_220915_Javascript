@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Javascript 객체연습</title>
+
+        <meta charset="utf-8" />
+        <meta name="author" content="KimDaeGak" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+        <link rel="stylesheet" href="style.css"/>
+        <script src="object.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="info_input">
+
+            <div class="info">
+
+                <div class="title">
+                    책제목
+                </div>
+
+                <div class="cont">
+                    <input type="text" id="booktitle">
+                </div>
+
+            </div>
+
+            <div class="info">
+
+                <div class="title">
+                    저 자
+                </div>
+
+                <div class="cont">
+                    <input type="text" id="writer">
+                </div>
+
+            </div>
+
+            <div class="info">
+
+                <div class="title">
+                    출간년도
+                </div>
+
+                <div class="cont">
+                    <input type="text" id="year">
+                </div>
+
+            </div>
+
+            <div class="info">
+
+                <div class="title">
+                    분 류
+                </div>
+
+                <div class="cont">
+                    <input type="text" id="kind">
+                </div>
+
+            </div>
+
+            <div class="info">
+
+                <div class="title">
+                    도서번호
+                </div>
+
+                <div class="cont">
+                    <input type="text" id="booknum" onkeyup="enterkey()">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="btn">
+            <a href="javascript:book_save();" id="save_btn">도서등록</a>
+        </div>
+
+        <div>
+            <a href="javascript:book_print();" id="list_book">도서목록</a>
+        </div>
+
+        <hr>
+
+        <div id="list">
+            
+        </div>
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
