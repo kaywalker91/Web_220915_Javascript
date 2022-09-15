@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script type='text/javascript' src="test.js"></script>
+
+        <style>
+            #score{
+                width:800px;
+                height:50px;
+                display:flex;
+                margin:0 auto;
+                margin-top:30px;
+            }
+            .score_col{
+                width:100px;
+                height:35px;
+            }
+            .hb input{width:60px; }
+            .name input{width:100px;}
+            .grade input{ width:70px; float:right;}
+            .bt{width:200px;}
+            .bt button{width:100px; float:right;}
+            ul{padding:0; margin:0; list-style:none; height:35px;margin-bottom:10px;}
+            ul li{height:35px;
+                line-height:35px;width:11.1%; float:left; text-align:center;}
+        </style>
+    </head>
+    <bod>
+
+        <div id="score">
+            <div class="score_col hb"><input type='text' class='info' id='hak' placeholder="학년"></div>
+            <div class="score_col hb"><input type='text' class='info' id='ban' placeholder="반"></div>
+            <div class="score_col name"><input type='text' class='info' id='name' placeholder="이름"></div>
+            <div class="score_col grade"><input type='text' class='info' id='kor' placeholder="국어"></div>
+            <div class="score_col grade"><input type='text' class='info' id='mat' placeholder="수학"></div>
+            <div class="score_col grade"><input type='text' class='info' id='eng' placeholder="영어"></div>
+            <div class="score_col bt"><button type="button" onclick="enroll()">성적등록</div>
+        </div>
+        <hr>
+        <ul><li class="h">학년</li><li class="b">반</li><li class="n">이름</li>
+            <li class="k">국어</li><li class="m">수학</li>
+            <li class="e">영어</li><li class="t">총점</li><li class="a">평균</li>
+            <li class="r">등수</li>
+        </ul>
+        <hr>
+        <div id="result">
+            
+        </div>
+    </bod>
+</html>
