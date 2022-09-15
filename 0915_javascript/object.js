@@ -30,6 +30,7 @@ function student(grade,sclass,name,kor,math,eng){
     this.eng = parseInt(eng);
     this.sum = parseInt(this.kor+this.math+this.eng);
     this.avg = parseInt(this.sum/3);
+    this.rank = 0;
     
 }
 
@@ -51,23 +52,27 @@ student.prototype.toString=function(){
 
     +"<span class='stu_tuple'>"+this.avg+"</span>"
 
-    +"<span class='stu_tuple'>"+"</span>";
+    +"<span class='stu_tuple'>"+this.rank+"</span>";
 }
 
 var stu_list = new Array();
 
 function stu_save(){
 
-    var grade = document.querySelector("#grade");
-    var sclass = document.querySelector("#sclass");
-    var name = document.querySelector("#name");
-    var kor = document.querySelector("#kor");
-    var math = document.querySelector("#math");
-    var eng = document.querySelector("#eng");
+    // var grade = document.querySelector("#grade");
+    // var sclass = document.querySelector("#sclass");
+    // var name = document.querySelector("#name");
+    // var kor = document.querySelector("#kor");
+    // var math = document.querySelector("#math");
+    // var eng = document.querySelector("#eng");
 
-    stu_list.push(new student(grade.value,sclass.value,name.value,kor.value,math.value,eng.value));
+    // stu_list.push(new student(grade.value,sclass.value,name.value,kor.value,math.value,eng.value));
 
-    alert(name.value+" 학생의 성적이 등록되었습니다!");
+    var score = document.getElementsByClassName("infor");
+
+    stu_list.push(new student(score[0].value,score[1].value,score[2].value,score[3].value,score[4].value,score[5].value));
+
+    alert(score[2].value+" 학생의 성적이 등록되었습니다!");
 
     var list = document.querySelector("#list");
     var html="";
@@ -78,12 +83,14 @@ function stu_save(){
 
     list.innerHTML=html;
 
-    grade.value="";
-    sclass.value="";
-    name.value="";
-    kor.value="";
-    math.value="";
-    eng.value="";
+    score[0].value="";
+    score[1].value="";
+    score[2].value="";
+    score[3].value="";
+    score[4].value="";
+    score[5].value="";
+  
+    score[0].focus();
 
 }
 
